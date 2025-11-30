@@ -1,0 +1,15 @@
+{
+  "component": {
+    "com.example.vehicle_emission": {
+      "author": "student",
+      "version": "1.0.0",
+      "build": {
+        "build_system": "zip"
+      },
+      "publish": {
+        "bucket": "your-s3-bucket-name",
+        "region": "us-west-2"
+      }
+    }
+  }
+}

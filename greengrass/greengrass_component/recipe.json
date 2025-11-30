@@ -1,0 +1,48 @@
+{
+  "RecipeFormatVersion": "2020-01-25",
+  "ComponentName": "com.example.vehicle.emission.artifacts",
+  "ComponentVersion": "1.3.1",
+  "ComponentType": "aws.greengrass.generic",
+  "ComponentDescription": "Greengrass component for processing vehicle emission data via MQTT",
+  "ComponentPublisher": "Rahul18",
+  "ComponentConfiguration": {
+    "DefaultConfiguration": {
+      "Message": "Status Success"
+    }
+  },
+  "Manifests": [
+    {
+      "Platform": {
+        "os": "linux"
+      },
+      "Name": "Linux",
+      "Lifecycle": {
+		"install" : "pip3 install --user boto3",
+        "run": "python3 {artifacts:path}/main.py '{configuration:/Message}'"
+      },
+      "Artifacts": [
+        {
+          "Uri": "s3://rahul-iot-lab4/components/com.example.vehicle_emission/1.0.0/main.py",
+          "Digest": "uLOk4auvjwUakrxTGnK9pGjecAuik1qMKqMu7CgMJqo=",
+          "Algorithm": "SHA-256",
+          "Unarchive": "NONE",
+          "Permission": {
+            "Read": "OWNER",
+            "Execute": "NONE"
+          }
+        },
+        {
+          "Uri": "s3://rahul-iot-lab4/components/com.example.vehicle_emission/1.0.0/process_emission.py",
+          "Digest": "ENX1uvxjQE8bnuzjNFXQHZ9RBBlvDVnnNK1H3QOttmU=",
+          "Algorithm": "SHA-256",
+          "Unarchive": "NONE",
+          "Permission": {
+            "Read": "OWNER",
+            "Execute": "NONE"
+          }
+        }
+      ]
+    }
+  ],
+  "Lifecycle": {}
+}

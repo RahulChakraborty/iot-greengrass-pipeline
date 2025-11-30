@@ -1,0 +1,22 @@
+{
+  "RecipeFormatVersion": "2020-01-25",
+  "ComponentName": "com.example.vehicle_emission",
+  "ComponentVersion": "1.0.0",
+  "ComponentDescription": "Processes vehicle emission data from IoT Core",
+  "ComponentPublisher": "student",
+  "Manifests": [
+    {
+      "Platform": {
+        "os": "linux"
+      },
+      "Lifecycle": {
+        "Run": "python3 -u main.py"
+      },
+  "Artifacts": [
+    { "Uri": "s3://rahul-iot-lab4/components/com.example.vehicle_emission/1.0.0/main.py" },
+    { "Uri": "s3://rahul-iot-lab4/components/com.example.vehicle_emission/1.0.0/process_emission.py" }
+]
+
+    }
+  ]
+}

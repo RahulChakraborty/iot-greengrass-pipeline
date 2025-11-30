@@ -1,0 +1,5 @@
+{
+  "thing_name": "lab4-car-1",
+  "certificate_arn": "arn:aws:iot:us-west-2:670503563655:cert/b4dccd82fb73bde32fd617752d955f17056023b5cd4356ea3a48e4de848665ee",
+  "certificate_id": "b4dccd82fb73bde32fd617752d955f17056023b5cd4356ea3a48e4de848665ee"
+}
